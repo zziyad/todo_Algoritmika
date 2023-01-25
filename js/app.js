@@ -100,7 +100,6 @@ export default class App {
   }
 
   keyUp() {
-    console.log('hhhhhhh');
     this.state.form.valid = (this.tags.input.value.length) ? 1 : 0;
     this.render();
   }
