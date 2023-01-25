@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+	padding: 7px;
+}
+
+.app {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+	background-color: #FFDC40;	
+	border: 1px solid black;
+	border-radius: 20px;
+	padding-top: 40px;
+	margin-top: 40px;
+}
+
+.section__top {
+	width: 400px;
+	/* height: 300px; */
+	border: 0px solid black;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: white;	
+
+}
+.formElement {
+	/* display: flex; */
+	position: relative;
+}
+
+
+h1,
+h2 {
+  /* color: rgb(8, 5, 5); */
+  font-size: 24px;
+	font-weight: 300;
+	margin: 0 auto;
+	text-align: center;
+  /* max-width: 420px; */
+  /* opacity: .5; */
+}
+
+h2 {
+  font-size: 32px;	
+	padding: 0 0 40px;
+}
+
+form {
+  /* position: ; */
+}
+
+form input {
+  margin: 0 auto;
+	text-align: left;
+	border: 1;
+	border-radius: 10px;
+	font-size: 18px;
+	line-height: 50px;
+	height: 40px;
+	padding: 0 10px;
+	width: 360px;
+}
+
+form button {
+  background: transparent;
+	border: 0;
+	color: #000;
+  /* cursor: pointer;
+	font-weight: 600;
+	font-size: 18px;
+	opacity: .3;*/
+  position: absolute;
+	/* transition: all linear .1s; */
+	top: 33px;
+	right: 41px; 
+}
+.btn {
+	padding: 0 10px 0 10px;
+	background-color: white;
+	background: transparent;
+	border: 0;
+}
+
+.addButton {
+	margin: 20px;
+	background: transparent;
+	border: 0;
+	color: #000;
+  /* cursor: pointer;
+	font-weight: 600;
+	font-size: 18px;
+	opacity: .3;*/
+  /* position: relative; */
+	/* transition: all linear .1s; */
+	/* top: 17px; */
+}
+.roundx:hover {
+  background-image: url("../img/b1.png");
+}
+
+li input[type='checkbox'] {
+	padding: 20px;
+	/* cursor: pointer; */
+    width: 20px;
+    height: 20px;
+	position: relative;
+
+}
+
+.row {
+	display: flex;
+	display:flex;
+	justify-content:space-between;
+}
+
+.dlt_btn {
+	padding-right: 50px;
+}
+
+.inp_value {
+	padding-left: 50px;
+}
+.txt__decor {
+	text-decoration: line-through;
+	color: rebeccapurple;
+}
