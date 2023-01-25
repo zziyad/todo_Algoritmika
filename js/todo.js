@@ -61,19 +61,8 @@ export default class ToDo {
 
   sortByName(bool = true) {
     return this.items.sort((a, b) => {
-      let first, second;
-      let typeA = parseInt(a['value']);
-      let typeB = parseInt(a['value']);
-      
-      if (typeA === 'number' && typeB === 'number') {
-        first = typeA;
-        second = typeB;
-      } else {
-        first = a['value'].toUpperCase();
-        second = b['value'].toUpperCase();
-      }
-      console.log(first, second);
-      
+      first = a['value'].toUpperCase();
+      second = b['value'].toUpperCase();
       if (first > second) return bool ? 1 : -1;
       if (first < second) return bool ? -1 : 1;
       return 0;
