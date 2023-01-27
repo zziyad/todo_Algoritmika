@@ -61,8 +61,8 @@ export default class ToDo {
 
   sortByName(bool = true) {
     return this.items.sort((a, b) => {
-      first = a['value'].toUpperCase();
-      second = b['value'].toUpperCase();
+      const first = a['value'].toUpperCase();
+      const second = b['value'].toUpperCase();
       if (first > second) return bool ? 1 : -1;
       if (first < second) return bool ? -1 : 1;
       return 0;
@@ -75,7 +75,7 @@ export default class ToDo {
     const monthIndex = date.getMonth();
     const year = date.getFullYear();
     // const time = Math.floor(Date.now() / 1000);
-    
+
     return `${day} ${MONTH_NAMES[monthIndex]} ${year}`;
   }
 }

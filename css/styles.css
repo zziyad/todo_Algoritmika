@@ -9,6 +9,11 @@ ul li {
   padding: 7px;
 }
 
+ul {
+	border: 1;
+  border-width: thin;
+  border-radius: 10px;
+}
 .app {
   display: flex;
   justify-content: center;
@@ -117,6 +122,39 @@ li input[type="checkbox"] {
 .inp_value {
   padding-left: 50px;
 }
+
+.add {
+  width: 150px;
+  height: 42px;
+  background-color: #833ae0;
+  border-radius: 71px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+.plus {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #9953f1;
+}
+
+.button-div {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
 .txt__decor {
   text-decoration: line-through;
   color: rebeccapurple;
