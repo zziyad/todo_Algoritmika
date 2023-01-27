@@ -53,6 +53,7 @@ export default class App {
   }
   submitForm(event) {
     event.preventDefault();
+    console.log();
     if (!this.tags.input.value.length) {
       return;
     }
@@ -105,13 +106,15 @@ export default class App {
   }
 
   blur() {
+    // console.log(this.tags.form.children[2].style.display = 'none');
+
     this.state.form.focus = 0;
     this.render();
   }
 
   focus(event) {
     this.state.form.focus = 1;
-
+    console.log('ffffffffff');
     if (this.tags.img.src === 'http://127.0.0.1:5500/todo/01/img/1.png') {
       this.tags.img.src = 'http://127.0.0.1:5500/todo/01/img/0.png';
     } else if (this.tags.img.src === 'http://127.0.0.1:5500/todo/01/img/3.png') {
