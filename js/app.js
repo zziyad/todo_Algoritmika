@@ -77,15 +77,18 @@ export default class App {
     if (event.target.attributes.alt.value === 'sort') {
       if (flag) {
         flag = false;
-        if (this.tags.img.src !== 'http://127.0.0.1:5500/todo/01/img/3.png') {
-          this.tags.img.src = 'http://127.0.0.1:5500/todo/01/img/3.png'
+        console.log(this.tags);
+
+        if (this.tags.img.src !== './img/3.png') {
+          this.tags.img.src = './img/3.png'
         }
         this.state.sortByName(flag);
         this.render();
       } else {
         flag = true;
-        if (this.tags.img.src !== 'http://127.0.0.1:5500/todo/01/img/1.png') {
-          this.tags.img.src = 'http://127.0.0.1:5500/todo/01/img/1.png';
+        console.log(this.tags.img);
+        if (this.tags.img.src !== './img/1.png') {
+          this.tags.img.src = './img/1.png';
         }
         this.state.sortByName();
         this.render();
@@ -115,10 +118,10 @@ export default class App {
   focus(event) {
     this.state.form.focus = 1;
     console.log('ffffffffff');
-    if (this.tags.img.src === 'http://127.0.0.1:5500/todo/01/img/1.png') {
-      this.tags.img.src = 'http://127.0.0.1:5500/todo/01/img/0.png';
-    } else if (this.tags.img.src === 'http://127.0.0.1:5500/todo/01/img/3.png') {
-      this.tags.img.src = 'http://127.0.0.1:5500/todo/01/img/4.png';
+    if (this.tags.img.src === 'http://127.0.0.1:5500/todo/img/1.png') {
+      this.tags.img.src = 'http://127.0.0.1:5500/todo/img/0.png';
+    } else if (this.tags.img.src === 'http://127.0.0.1:5500/todo/img/3.png') {
+      this.tags.img.src = 'http://127.0.0.1:5500/todo/img/4.png';
     }
 
     this.render();
