@@ -1,4 +1,4 @@
-import ToDo from "./todo.js";
+import ToDo from "../todo.js";
 let flag = false;
 
 export default class App {
@@ -79,7 +79,7 @@ export default class App {
         flag = false;
         console.log(this.tags);
 
-        if (this.tags.img.src !== './img/3.png') {
+        if (this.tags.img.src !== '.ёч/img/3.png') {
           this.tags.img.src = './img/3.png'
         }
         this.state.sortByName(flag);

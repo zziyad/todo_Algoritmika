@@ -10,7 +10,7 @@ ul li {
 }
 
 ul {
-	border: 1;
+  border: 1;
   border-width: thin;
   border-radius: 10px;
 }
@@ -118,7 +118,7 @@ li input[type="checkbox"] {
 }
 
 .dlt_btn {
-  padding-right: 27px;
+  padding-right: 36px;
 }
 
 .inp_value {
@@ -152,9 +152,9 @@ li input[type="checkbox"] {
 }
 
 .button-div {
-	display: flex;
-	justify-content: center;
-	padding: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 .txt__decor {
